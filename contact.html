@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+   
+
+   
+
+</head>
+<body>
+    
+        <nav class= "navbar"><!--navegador-->
+            <h5 class= "telefono">¿Te gustan nuestros productos? Llamanos gratis: 656 777 888</h5>
+            <ul class= "navbar-list"> <!--lista-->
+                <li class= "navbar-item ">
+                    <a href="index.html">Inicio</a>  <!--gdzie chcemy zeby nas odeslalo do strony w nawigacji-->
+    
+                </li>
+                <li class= "navbar-item"> <a href="index.html#quienes-somos">Quienes somos</a>
+                    
+                </li>
+                <li class= "navbar-item"><a href="index.html#aventuras">Aventuras</a>
+                    
+                </li>
+                <li class= "navbar-item"><a href="product.html">Productos</a>
+                    
+                </li>
+                <li class= "navbar-item active"><a href="contact.html">Contacto</a>
+                    
+                </li>
+    
+            </ul>
+    
+    
+        </nav> 
+    
+    
+        
+        <main>
+               
+            
+
+            <section class="contact section-container"> <!--uzupelnic tabelke!!!!!!!-->
+                <h2>Contacta con nosotros</h2>
+
+            
+                    <div class="col-6">
+                        <div class="form">
+                        <form name="contacto" metho="get">
+                            <div class="form-row"> <!-- nombre y apellido-->
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="apellidos" requiered>
+
+                            </div>
+                            <div class="form-row"><!--email-->
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" placeholder="name@company.com"
+                                pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9]+" requiered>
+                                <div class="form-row">
+                                    <!--opciones - radio-->
+                                    <div>Tipo de pedido:</div>
+                                    <label for="tipo_pedido_1">Normal</label>
+                                    <input type="radio" id="tipo_pedido_1" name="tipo_pedido" value="Rescate" required>
+
+                                    <label for="tipo_mision_2">Personalizado</label>
+                                    <input type="radio" id="tipo_pedido_2" name="tipo_pedido" value="Ajuste de cuentas" required>
+
+
+
+                                    
+                                </div>
+                        
+                                <div class="form-row">
+                                        <!--fecha-->
+                                        <label for="fecha">Fecha de realizacion de pedido (aprox.):</label>
+                                        <input type="date" id="fecha" name="fecha"required>
+                                </div>
+                                <div class="form-row">
+                                    <!--telefono-->
+                                    <label for="fecha">Teléfono:</label>
+                                    <input type="text" id="number" name="number" placeholder="telefono" required>
+                                    
+                            </div>
+                                <div class="form-row">
+                                    <!--botón enviar-->
+                                    <!-- Para poder meter cosas ahí dentro no puede ser 
+                                        input. Tiene que ser button-->
+                                        <button type="submit" id="enviar">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            </section>
+
+
+
+            <section class=" table section-container">
+                <table class="col-6"> <!--tabelka z produktami i cenami-->
+                    <thead>
+                        <tr>
+                            <th>Tipo de servicio</th>
+                            <th>precio</th>
+                       
+                        <tbody>
+                            <tr>
+                                <td>Camiseta</td>
+                                <td>10 euro</td>
+                            </tr>
+                            <tr>
+                                <td>Mochila</td>
+                                <td>12 euro</td>
+                            </tr>
+                            <tr>
+                                <td>Bolso</td>
+                                <td>8 euro</td>
+                            </tr>
+                            <tr>
+                                <td>Taza</td>
+                                <td>5 euro</td>
+                            </tr>
+                            <tr>
+                                <td>Cojín</td>
+                                <td>10 euro</td>
+                            </tr>
+                             
+
+                        </tbody>
+                    </thead>
+                </table>
+                <img class= "col-6 kontakt" src="./images/kontakt1.jpg" alt="kontakt" > 
+
+            </section>
+            
+        </main>
+        <footer class="footer">
+                Magdalena Anna Michalska MIL PASOS &copy; 2017 bbaa
+        </footer>
+    
+</body>
+</html>
